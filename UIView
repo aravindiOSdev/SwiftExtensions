@@ -1,0 +1,34 @@
+//  PlaceholderView
+//
+//  Created by Ankit Bhana on 17/06/19.
+//  Copyright © 2019 Ankit Bhana. All rights reserved.
+//
+
+import UIKit
+
+extension UIView {
+    
+    func showPlaceholderLabelWith(message: String) {
+        DispatchQueue.main.async {
+            let lblMessage = UILabel()
+            lblMessage.text = message
+            lblMessage.textAlignment = .center
+            lblMessage.textColor = .white
+            lblMessage.numberOfLines = 5
+            lblMessage.backgroundColor = .red
+            let textHeightForSingleLine = lblMessage.intrinsicContentSize.height
+            let padding: CGFloat = 10
+            var labelHeight = (textHeightForSingleLine + padding * 2) * CGFloat(lblMessage.numberOfLines)
+            if labelHeight > self.bounds.size.height {
+                labelHeight = self.bounds.size.height - (padding * 2)
+            }
+            lblMessage.frame.size = CGSize(width: self.bounds.width - 40, height: labelHeight)
+            let centerX = self.bounds.width / 2
+            let centerY = self.bounds.height / 2
+            lblMessage.center = CGPoint(x: centerX, y: centerY)
+            self.addSubview(lblMessage)
+
+        }
+    }
+    
+}
