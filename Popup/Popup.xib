@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Popup" customModule="Popup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MO4-AI-IpS">
+                    <rect key="frame" x="47" y="229.33333333333334" width="281" height="353.66666666666663"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xW9-by-J60">
+                            <rect key="frame" x="115.66666666666666" y="10" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" placeholder="YES" id="ZWF-N8-Gej"/>
+                                <constraint firstAttribute="height" constant="50" placeholder="YES" id="fuc-lH-ihw"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6c-CO-AAS">
+                            <rect key="frame" x="20" y="69.999999999999972" width="241" height="21.666666666666671"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doV-4c-Hzk">
+                            <rect key="frame" x="20" y="101.66666666666666" width="241" height="171.99999999999997"/>
+                            <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYC-67-f5C">
+                            <rect key="frame" x="70.333333333333329" y="293.66666666666663" width="140.33333333333337" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.1590771164" blue="0.61651959199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="0bp-Ga-MTP"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="btnTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="c2a-Cd-nek"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="xW9-by-J60" firstAttribute="top" secondItem="MO4-AI-IpS" secondAttribute="top" constant="10" id="6Ud-gv-0Yt"/>
+                        <constraint firstItem="doV-4c-Hzk" firstAttribute="leading" secondItem="N6c-CO-AAS" secondAttribute="leading" id="FHK-ss-4OA"/>
+                        <constraint firstItem="N6c-CO-AAS" firstAttribute="leading" secondItem="MO4-AI-IpS" secondAttribute="leading" constant="20" id="IaC-TZ-WZT"/>
+                        <constraint firstAttribute="trailing" secondItem="N6c-CO-AAS" secondAttribute="trailing" constant="20" id="JdV-hC-kgd"/>
+                        <constraint firstItem="xW9-by-J60" firstAttribute="centerX" secondItem="MO4-AI-IpS" secondAttribute="centerX" id="NKG-qJ-FYA"/>
+                        <constraint firstItem="KYC-67-f5C" firstAttribute="width" secondItem="MO4-AI-IpS" secondAttribute="width" multiplier="0.5" id="PlM-F2-oQU"/>
+                        <constraint firstAttribute="bottom" secondItem="KYC-67-f5C" secondAttribute="bottom" constant="20" id="RSK-k5-Nq3"/>
+                        <constraint firstItem="doV-4c-Hzk" firstAttribute="trailing" secondItem="N6c-CO-AAS" secondAttribute="trailing" id="ZuN-fW-ZNE"/>
+                        <constraint firstItem="KYC-67-f5C" firstAttribute="centerX" secondItem="MO4-AI-IpS" secondAttribute="centerX" id="aKg-ht-70p"/>
+                        <constraint firstItem="doV-4c-Hzk" firstAttribute="top" secondItem="N6c-CO-AAS" secondAttribute="bottom" constant="10" id="rXc-cU-UsI"/>
+                        <constraint firstAttribute="bottom" secondItem="doV-4c-Hzk" secondAttribute="bottom" priority="750" constant="20" id="sxU-vQ-uKU"/>
+                        <constraint firstItem="KYC-67-f5C" firstAttribute="top" secondItem="doV-4c-Hzk" secondAttribute="bottom" priority="751" constant="20" id="zIt-oI-V0N"/>
+                        <constraint firstItem="N6c-CO-AAS" firstAttribute="top" secondItem="xW9-by-J60" secondAttribute="bottom" constant="10" id="zy3-9u-dIt"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWq-hB-Pq6">
+                    <rect key="frame" x="308" y="219.33333333333334" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.1013609021" blue="0.071024960309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="44P-zw-qZu"/>
+                        <constraint firstAttribute="width" constant="30" id="VMB-tF-QDb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnCross" destination="iN0-l3-epB" eventType="touchUpInside" id="CpA-fw-n3d"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dWq-hB-Pq6" firstAttribute="trailing" secondItem="MO4-AI-IpS" secondAttribute="trailing" constant="10" id="9Vg-yY-cTu"/>
+                <constraint firstItem="dWq-hB-Pq6" firstAttribute="top" secondItem="MO4-AI-IpS" secondAttribute="top" constant="-10" id="DkY-fm-h0l"/>
+                <constraint firstItem="MO4-AI-IpS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.75" id="aQG-kE-JFt"/>
+                <constraint firstItem="MO4-AI-IpS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qne-Ul-Dkg"/>
+                <constraint firstItem="MO4-AI-IpS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wPe-Ug-Ck6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomLblMessage" destination="sxU-vQ-uKU" id="h1t-0y-ql0"/>
+                <outlet property="button" destination="KYC-67-f5C" id="jnV-wB-Hds"/>
+                <outlet property="imageView" destination="xW9-by-J60" id="CUF-pH-qr3"/>
+                <outlet property="lblMessage" destination="doV-4c-Hzk" id="R0p-Iz-eGb"/>
+                <outlet property="lblTitle" destination="N6c-CO-AAS" id="cj4-Fp-P7z"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154.43349753694582"/>
+        </view>
+    </objects>
+</document>
