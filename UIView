@@ -32,3 +32,41 @@ extension UIView {
     }
     
 }
+
+
+    /**
+     Present ABAlert as a toast.
+     */
+    /*private func showAlertAsToast() {
+        guard let keyWindow = UIApplication.shared.keyWindow else { return }
+        
+        let frameY = alertDialog.frame.origin.y
+        let maxY = keyWindow.frame.maxY
+        
+        let initialX: CGFloat = 0
+        let initialY: CGFloat = maxY - frameY
+        
+        let translateTransform = CGAffineTransform(translationX: initialX, y: initialY)
+        alertDialog.transform = translateTransform
+        
+        let bottomSafeArea = keyWindow.safeAreaInsets.bottom
+        let totalHeightWithoutSafeArea = keyWindow.bounds.height - bottomSafeArea
+        
+        let finalX: CGFloat = 0
+        let finalY: CGFloat = totalHeightWithoutSafeArea - frameY - 100
+        let finalTranslateTransform = CGAffineTransform(translationX: finalX, y: finalY)
+        
+        self.alertBGView.alpha = 0
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
+            self.alertDialog.transform = finalTranslateTransform
+        }, completion: {(_) in
+            
+            UIView.animate(withDuration: 0.5, delay: 3.0, options: .curveEaseIn, animations: {
+                self.alertDialog.alpha = 0
+            }, completion: { (_) in
+                self.abAlert.removeFromSuperview()
+            })
+        })
+
+    }*/
